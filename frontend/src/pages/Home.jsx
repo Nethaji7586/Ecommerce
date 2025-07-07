@@ -26,7 +26,7 @@ const Home = () => {
         setProducts(productsArray)
       } catch (err) {
         console.error("Fetch error:", err)
-        setError(err.response?.data?.message || "Waiting for Backend to start")
+        setError(err.response?.data?.message || "Protected by Admin")
       } finally {
         setLoading(false)
       }
