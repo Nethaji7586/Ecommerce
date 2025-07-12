@@ -26,7 +26,7 @@ const Home = () => {
         setProducts(productsArray)
       } catch (err) {
         console.error("Fetch error:", err)
-        setError(err.response?.data?.message || "Protected by Admin")
+        setError(err.response?.data?.message || "Service paused by nethaji")
       } finally {
         setLoading(false)
       }
